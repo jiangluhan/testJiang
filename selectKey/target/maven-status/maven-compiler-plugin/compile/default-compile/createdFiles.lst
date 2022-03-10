@@ -1,0 +1,8 @@
+com\selectKey\service\testSelectKeyService.class
+com\selectKey\po\testSelectKeyUuidPo.class
+com\selectKey\aspect\HttpAspect.class
+com\selectKey\po\testSelectKeyAutoPo.class
+com\selectKey\controller\TestSelectKeyController.class
+com\selectKey\service\impl\TestSelectKeyServiceImpl.class
+com\selectKey\dao\testSelectKeyDao.class
+com\selectKey\SelectKeyApp.class

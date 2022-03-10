@@ -1,0 +1,41 @@
+# 端口号
+server:
+  port: 8088
+
+spring:
+  # 指定启动环境
+  profiles:
+    active: local
+  # 应用名称
+  application:
+    name: eureka-service
+  # 开启用户名密码登录
+  security:
+    basic:
+      enabled: true
+    user:
+      name: jiang
+      password: wj210523
+
+# 日志配置
+logging:
+  config: classpath:logging-config.xml
+
+# eureka 单机配置
+eureka:
+  server:
+    # 测试时关闭自我保护机制，保证不可用服务及时踢出
+    enableSelfPreservation: true
+  # 主机名
+  instance:
+    # 单机本地测试，环境部署时为部署机器物理机地址
+    hostname: 127.0.0.1
+    instanceId: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+    peer1: 127.0.0.1
+  client:
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.peer1}:${server.port}/eureka
+    # Eureka 服务端不在注册中心注册自己
+    register-with-eureka: false
+    # 是否从注册中心获取注册信息
+    fetch-registry: false
