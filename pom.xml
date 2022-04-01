@@ -11,6 +11,7 @@
     <modules>
         <module>selectKey</module>
         <module>eureka</module>
+        <module>swaggerToWord</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>
@@ -48,6 +49,7 @@
         <ognl.version>3.1.12</ognl.version>
         <!--jwt 解析token-->
         <jwt.version>6.0.2</jwt.version>
+        <junit.version>4.13.2</junit.version>
     </properties>
 
     <dependencyManagement>
@@ -152,6 +154,14 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
                 <version>5.3.3.RELEASE</version>
+            </dependency>
+
+            <!--单元测试-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <scope>test</scope>
+                <version>${junit.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
