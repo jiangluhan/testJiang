@@ -1,0 +1,57 @@
+server:
+  port: 8081
+  tomcat:
+    max-threads: 800
+    uri-encoding: UTF-8
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: swaggerToWord
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+# Swagger json url address
+# etc. https://petstore.swagger.io/
+swagger.url: https://petstore.swagger.io/v2/swagger.json
+
+#eureka 配置
+eureka:
+  port: 8088
+  user:
+    name: jiang
+    password: wj210523
+  peer:
+    node1: 127.0.0.1
+    # 多节点,用于docker镜像部署，该值由docker-compose 文件中指定
+    # node1: ${eureka.peer.node1}
+
+  instance:
+    hostname: 127.0.0.1
+    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.user.name}:${eureka.user.password}@${eureka.peer.node1}:${eureka.port}/eureka
+    # Eureka 服务端不在注册中心注册自己
+    register-with-eureka: true
+    # 是否从注册中心获取注册信息
+    fetch-registry: true
+
+
+
+
+
+
