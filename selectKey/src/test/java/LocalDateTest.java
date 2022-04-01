@@ -11,8 +11,8 @@ public class LocalDateTest {
     @Test
     // 相当于是只要时间的前半部分，不要时间，只要年月日
     public void test() {
-//        LocalDate localDate = toLocalDate("2018-01-01 13:00:59");
-//        System.out.println(localDate);
+        LocalDate localDate = toLocalDate("2018-01-01 13:00:59");
+        System.out.println(localDate);
 
         System.out.println();
 
