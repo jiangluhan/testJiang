@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  * @author jiangluhan
@@ -18,6 +19,11 @@ public class LocalDateTest {
 
         boolean compare = compare("2022-04-01 15:06:50");
         System.out.println(compare);
+
+        System.out.println();
+
+        dateFormate("2022/04/02");
+        dateFormate("2022-04-02");
     }
 
     public boolean compare(String time) {
@@ -44,5 +50,16 @@ public class LocalDateTest {
      */
     private static LocalDate toLocalDate(String time) {
         return LocalDate.parse(time.trim().split(" ")[0]);
+    }
+
+    private void dateFormate(String endTimeString) {
+        try {
+            // 校验时间是否符合yyyy-MM-dd格式，不符合就抛出异常
+            DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            LocalDate.parse(endTimeString, df);
+            System.out.println("授权到期时间格式正确");
+        } catch (Exception e) {
+            System.out.println("授权到期时间格式错误");
+        }
     }
 }
