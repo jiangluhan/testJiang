@@ -1,0 +1,10 @@
+<application>
+  <component name="AppStorage">
+    <histories>
+      <item value="com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected" />
+    </histories>
+  </component>
+  <component name="Cache">
+    <option name="lastTrimTime" value="1648867736523" />
+  </component>
+</application>
