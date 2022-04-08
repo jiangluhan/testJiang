@@ -1,12 +1,14 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="Returns &lt;tt&gt;true&lt;tt&gt; if this list contains all of the elements of the specified collection. @param c collection to be checked for containment in this list @return &lt;tt&gt;true&lt;tt&gt; if this list contains all of the elements of the specified collection" />
+      <item value="collection to be checked for containment in this list" />
       <item value="BigInteger must support values in the range -2&lt;sup&gt;{@code Integer.MAX_VALUE}&lt;sup&gt; (exclusive) to +2&lt;sup&gt;{@code Integer.MAX_VALUE}&lt;sup&gt; (exclusive) and may support values outside of that range." />
       <item value="he signum of this BigInteger: -1 for negative, 0 for zero, or 1 for positive. Note that the BigInteger zero &lt;i&gt;must&lt;i&gt; have a signum of 0. This is necessary to ensures that there is exactly one representation for each BigInteger value." />
       <item value="com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected" />
     </histories>
   </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1648867736523" />
+    <option name="lastTrimTime" value="1649386729176" />
   </component>
 </application>
