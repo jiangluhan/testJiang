@@ -11,8 +11,8 @@ import com.selectKey.po.testSelectKeyUuidPo;
 
 public interface testSelectKeyService {
     // 测selectKey标签的作用，当主键为自增时
-    public int testSelectKeyAuto(testSelectKeyAutoPo autoPo);
+    int testSelectKeyAuto(testSelectKeyAutoPo autoPo);
 
     // 测selectKey标签的作用，当主键为UUID时
-    public int testSelectKeyUuid(testSelectKeyUuidPo uuidPo);
+    int testSelectKeyUuid(testSelectKeyUuidPo uuidPo);
 }
