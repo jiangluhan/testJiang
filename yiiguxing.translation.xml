@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="Load balancer does not have available server for client: GW-GATEWAY-AUTH-SERVICE" />
       <item value="Returns &lt;tt&gt;true&lt;tt&gt; if this list contains all of the elements of the specified collection. @param c collection to be checked for containment in this list @return &lt;tt&gt;true&lt;tt&gt; if this list contains all of the elements of the specified collection" />
       <item value="collection to be checked for containment in this list" />
       <item value="BigInteger must support values in the range -2&lt;sup&gt;{@code Integer.MAX_VALUE}&lt;sup&gt; (exclusive) to +2&lt;sup&gt;{@code Integer.MAX_VALUE}&lt;sup&gt; (exclusive) and may support values outside of that range." />
@@ -9,6 +10,6 @@
     </histories>
   </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1649386729176" />
+    <option name="lastTrimTime" value="1653894824431" />
   </component>
 </application>
