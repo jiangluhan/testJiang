@@ -1,6 +1,10 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="A handler for rejected tasks that runs the rejected task directly in the calling thread of the {@code execute} method, unless the executor has been shut down, in which case the task is discarded." />
+      <item value="Executes task r in the caller's thread, unless the executor has been shut down, in which case the task is discarded." />
+      <item value="Always throws RejectedExecutionException." />
+      <item value="Always throws RejectedExecutionException. @param r the runnable task requested to be executed @param e the executor attempting to execute this task @throws RejectedExecutionException always" />
       <item value="Load balancer does not have available server for client: GW-GATEWAY-AUTH-SERVICE" />
       <item value="Returns &lt;tt&gt;true&lt;tt&gt; if this list contains all of the elements of the specified collection. @param c collection to be checked for containment in this list @return &lt;tt&gt;true&lt;tt&gt; if this list contains all of the elements of the specified collection" />
       <item value="collection to be checked for containment in this list" />
@@ -10,6 +14,6 @@
     </histories>
   </component>
   <component name="Cache">
-    <option name="lastTrimTime" value="1653894824431" />
+    <option name="lastTrimTime" value="1655343166270" />
   </component>
 </application>
