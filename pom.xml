@@ -12,6 +12,8 @@
         <module>selectKey</module>
         <module>eureka</module>
         <module>swaggerToWord</module>
+        <module>redis</module>
+        <module>createWatermark</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>
@@ -50,6 +52,7 @@
         <!--jwt 解析token-->
         <jwt.version>6.0.2</jwt.version>
         <junit.version>4.13.2</junit.version>
+        <spire.presentation.free>5.1.0</spire.presentation.free>
     </properties>
 
     <dependencyManagement>
@@ -163,12 +166,28 @@
                 <scope>test</scope>
                 <version>${junit.version}</version>
             </dependency>
+            <!--批量获取ID引入依赖-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>22.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>e-iceblue</groupId>
+                <artifactId>spire.presentation.free</artifactId>
+                <version>${spire.presentation.free}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <!--仓库地址-->
     <repositories>
-
+        <repository>
+            <id>com.e-iceblue</id>
+            <name>e-iceblue</name>
+            <url>https://repo.e-iceblue.cn/repository/maven-public/</url>
+        </repository>
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -177,7 +196,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-
         <repository>
             <id>alimaven</id>
             <name>aliyun maven</name>
@@ -189,7 +207,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-
     </repositories>
     <!--当前下的module 均以jar包形式提供-->
     <build>
@@ -214,5 +231,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
