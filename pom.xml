@@ -12,8 +12,7 @@
         <module>selectKey</module>
         <module>eureka</module>
         <module>swaggerToWord</module>
-        <module>redis</module>
-        <module>createWatermark</module>
+        <module>simple-Mybatis-1</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>
@@ -53,6 +52,10 @@
         <jwt.version>6.0.2</jwt.version>
         <junit.version>4.13.2</junit.version>
         <spire.presentation.free>5.1.0</spire.presentation.free>
+        <!--slf4j 版本号-->
+        <slf4j.api.version>1.7.30</slf4j.api.version>
+        <!--log4j 版本号 -->
+        <log4j.version>1.2.17</log4j.version>
     </properties>
 
     <dependencyManagement>
@@ -173,11 +176,25 @@
                 <version>22.0</version>
             </dependency>
 
+<!--            <dependency>-->
+<!--                <groupId>e-iceblue</groupId>-->
+<!--                <artifactId>spire.presentation.free</artifactId>-->
+<!--                <version>${spire.presentation.free}</version>-->
+<!--            </dependency>-->
+
             <dependency>
-                <groupId>e-iceblue</groupId>
-                <artifactId>spire.presentation.free</artifactId>
-                <version>${spire.presentation.free}</version>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.api.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
