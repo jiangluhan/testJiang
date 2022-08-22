@@ -12,10 +12,10 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.List;
 
-public class CountryMapperTest {
+public class CountryEntityMapperTest {
 	
 	private static SqlSessionFactory sqlSessionFactory;
-	
+
 	@BeforeClass
 	public static void init(){
 		try {
@@ -26,21 +26,21 @@ public class CountryMapperTest {
         	ignore.printStackTrace();
         }
 	}
-	
+
 	@Test
 	public void testSelectAll(){
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 		try {
-			List<CountryEntity> countryList = sqlSession.selectList("selectAll");
-			printCountryList(countryList);
+			List<CountryEntity> countryEntityList = sqlSession.selectList("selectAll");
+			printCountryList(countryEntityList);
 		} finally {
 			sqlSession.close();
 		}
 	}
-	
-	private void printCountryList(List<CountryEntity> countryList){
-		for(CountryEntity country : countryList){
-			System.out.printf("%-4d%4s%4s\n",country.getId(), country.getCountryName(), country.getCountryCode());
+
+	private void printCountryList(List<CountryEntity> countryEntityList){
+		for(CountryEntity countryEntity : countryEntityList){
+			System.out.printf("%-4d%4s%4s\n", countryEntity.getId(), countryEntity.getCountryName(), countryEntity.getCountryCode());
 		}
 	}
 }

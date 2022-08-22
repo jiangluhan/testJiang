@@ -7,13 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="simple-Mybatis-1" />
         <module name="swaggerToWord" />
+        <module name="simple-Mybatis-2" />
         <module name="selectKey" />
         <module name="eureka" />
-        <module name="simple-Mybatis-1" />
+        <module name="simple-Mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="simple-mybatis" target="1.8" />
       <module name="simple-mybatis-1" target="1.8" />
     </bytecodeTargetLevel>
   </component>
