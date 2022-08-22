@@ -19,7 +19,7 @@
                 <property name="" value=""/>
             </transactionManager>
             <dataSource type="UNPOOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <!--不支持采用ip：192.168.6.143 why？ -->
                 <property name="url" value="jdbc:mysql://192.168.6.143:3306/simple-mybatis"/>
                 <property name="username" value="root"/>

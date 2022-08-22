@@ -37,7 +37,7 @@
         <!--数据源-->
         <druid.version>1.1.21</druid.version>
         <!--mysql 版本号-->
-        <mysql.version>5.1.46</mysql.version>
+        <mysql.version>8.0.30</mysql.version>
         <!--swagger 版本号-->
         <swagger.version>2.9.2</swagger.version>
         <!--liquibase 版本号-->
