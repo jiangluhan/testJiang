@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="simple-Mybatis-1" />
         <module name="swaggerToWord" />
-        <module name="simple-Mybatis-2" />
         <module name="selectKey" />
         <module name="eureka" />
         <module name="simple-Mybatis" />
