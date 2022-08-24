@@ -10,6 +10,7 @@
         <module name="simple-Mybatis-1" />
         <module name="swaggerToWord" />
         <module name="selectKey" />
+        <module name="test" />
         <module name="eureka" />
         <module name="simple-Mybatis" />
       </profile>
