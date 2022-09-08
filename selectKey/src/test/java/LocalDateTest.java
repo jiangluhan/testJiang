@@ -1,14 +1,7 @@
 import org.junit.Test;
-import org.springframework.util.ObjectUtils;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalAdjusters;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 /**
  * @author jiangluhan
@@ -33,23 +26,27 @@ public class LocalDateTest {
 //        dateFormate("2022-04-02");
 
         // 获取当天零点时间
-        LocalDateTime today = LocalDateTime.of(LocalDate.now(), LocalTime.of(0,0,0));
-        System.out.println(today);
-        // 获取当月第一天的零点时间
-        LocalDateTime time = today.with(TemporalAdjusters.firstDayOfMonth());
-        System.out.println(time);
-        String startTime = today.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+//        LocalDateTime today = LocalDateTime.of(LocalDate.now(), LocalTime.of(0,0,0));
+//        System.out.println(today);
+//        // 获取当月第一天的零点时间
+//        LocalDateTime time = today.with(TemporalAdjusters.firstDayOfMonth());
+//        System.out.println(time);
+//        String startTime = today.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 //        LocalDate startDay = LocalDateTime.parse(startTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")).toLocalDate();
 //        System.out.println(startDay);
 
 
-        System.out.println("----------------------");
+//        System.out.println("----------------------");
+//
+//        LocalDate startDay = LocalDateTime.parse("2022-08-11 00:00:00",DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")).toLocalDate();
+//        System.out.println(startDay);
+//        LocalDate endDay = LocalDateTime.parse("2022-08-17 23:59:59",DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")).toLocalDate();
+//        long daysBetween = ChronoUnit.DAYS.between(startDay, endDay) + 1;
+//        System.out.println(daysBetween);
 
-        LocalDate startDay = LocalDateTime.parse("2022-08-11 00:00:00",DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")).toLocalDate();
-        System.out.println(startDay);
-        LocalDate endDay = LocalDateTime.parse("2022-08-17 23:59:59",DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")).toLocalDate();
-        long daysBetween = ChronoUnit.DAYS.between(startDay, endDay) + 1;
-        System.out.println(daysBetween);
+
+
+
     }
 
 //    public List<CountDto> dayCount(QueryDto param) {
