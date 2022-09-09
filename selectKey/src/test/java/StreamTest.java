@@ -27,6 +27,9 @@ public class StreamTest {
         // test 1
         // test 2
 
+        // test 3
+        // test 4
+
         List<Person> filtered = persons
                 .stream() // 构建流
                 .filter(p -> p.name.startsWith("P")) // 过滤出名字以 P 开头的
