@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamTest {
 
@@ -17,12 +20,12 @@ public class StreamTest {
 
 
         // 构建一个 Person 集合
-//        List<Person> persons =
-//                Arrays.asList(
-//                        new Person("Max", 18),
-//                        new Person("Peter", 23),
-//                        new Person("Pamela", 23),
-//                        new Person("David", 12));
+        List<Person> persons =
+                Arrays.asList(
+                        new Person("Max", 18),
+                        new Person("Peter", 23),
+                        new Person("Pamela", 23),
+                        new Person("David", 12));
 
 
     // 测试一下dev分支的代码到test
