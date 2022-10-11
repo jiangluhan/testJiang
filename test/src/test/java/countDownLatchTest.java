@@ -32,6 +32,9 @@ public class countDownLatchTest {
          */
         try{
             countDownLatch.await();
+            // 测试异常断点的调试
+            Object o = null;
+            o.getClass();
         }catch (Exception e){
             e.printStackTrace();
         }
