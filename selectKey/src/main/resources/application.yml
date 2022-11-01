@@ -12,10 +12,10 @@ spring:
   application:
     name: selectKey-service
   datasource:
-    url: jdbc:mysql://localhost:3306/test_jiang?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    password: wj210523
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 #eureka 配置
 eureka:

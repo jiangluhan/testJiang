@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author jiangluhan
  * @Description:
@@ -27,5 +29,10 @@ public class TestSelectKeyServiceImpl implements testSelectKeyService {
     // 测selectKey标签的作用，当主键为UUID时
     public int testSelectKeyUuid(testSelectKeyUuidPo uuidPo) {
         return testSelectKeyDao.testSelectKeyUuid(uuidPo);
+    }
+
+    @Override
+    public testSelectKeyAutoPo testList(List<Integer> list) {
+        return testSelectKeyDao.testList(list);
     }
 }

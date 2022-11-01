@@ -3,6 +3,8 @@ package com.selectKey.service;
 import com.selectKey.po.testSelectKeyAutoPo;
 import com.selectKey.po.testSelectKeyUuidPo;
 
+import java.util.List;
+
 /**
  * @author jiangluhan
  * @Description:
@@ -15,4 +17,6 @@ public interface testSelectKeyService {
 
     // 测selectKey标签的作用，当主键为UUID时
     int testSelectKeyUuid(testSelectKeyUuidPo uuidPo);
+
+    testSelectKeyAutoPo testList(List<Integer> list);
 }

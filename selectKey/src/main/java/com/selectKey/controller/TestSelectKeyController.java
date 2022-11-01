@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author jiangluhan
  * @Description: test SelectKey[1、AUTO 2、UUID]
@@ -46,4 +49,17 @@ public class TestSelectKeyController {
         }
         log.info("成功插入数据，且获取的uuid为：{}", uuidPo.getId());
     }
+
+    /**
+     * 测试foreach标签在inner join中使用是否生效
+     */
+    @GetMapping("/v1/testList")
+    public void testList() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(11);
+        testSelectKeyAutoPo testSelectKeyAutoPo = testSelectKeyService.testList(list);
+        log.info("成功获取数据：{}", testSelectKeyAutoPo);
+    }
+
 }
