@@ -17,6 +17,7 @@
         <module>spring-bean-test</module>
         <module>spring-register-bean</module>
         <module>spring-batch-test</module>
+        <module>spring-async-test</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>
