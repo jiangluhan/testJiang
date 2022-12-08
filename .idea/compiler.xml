@@ -8,10 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="simple-Mybatis-1" />
+<<<<<<< HEAD
+=======
+        <module name="spring-fileSystemUtils-test" />
+>>>>>>> dev
         <module name="selectKey" />
         <module name="test" />
         <module name="eureka" />
         <module name="simple-Mybatis" />
+<<<<<<< HEAD
+=======
+        <module name="spring-async-test" />
+>>>>>>> dev
         <module name="swaggerToWord" />
         <module name="spring-register-bean" />
         <module name="spring-bean-test" />

@@ -1,6 +1,4 @@
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+
 
 /**
  * 用于测试一些比较小的且简单的测试验证，多是公司业务代码需要进行一些小验证的时候可以在这个类下面验证
@@ -20,14 +18,28 @@ public class smallTest {
 //        LocalDateTime dateTime = LocalDateTime.parse("2022-11-03 11:41", df);
 //        DateTimeFormatter df2 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 //        System.out.println(df2.format(dateTime));
-        String str = "2022-11-03 11:41";
-        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        try {
-            Date date = formatter.parse(str);
-            System.out.println(date);
-            System.out.print("格式正确！");
-        } catch (Exception e) {
-            System.out.println("格式错误！");
-        }
+//        String str = "2022-11-03 11:41";
+//        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+//        try {
+//            Date date = formatter.parse(str);
+//            System.out.println(date);
+//            System.out.print("格式正确！");
+//        } catch (Exception e) {
+//            System.out.println("格式错误！");
+//        }
+//        List<String> failureFileNames = new ArrayList<>();
+//        failureFileNames.add("1.jpg");
+//        failureFileNames.add("2.png");
+//        failureFileNames.add("3.tiff");
+//
+        StringBuilder failureFileName = new StringBuilder();
+//        for(int i = 0; i < failureFileNames.size(); i++) {
+//            if(i != failureFileNames.size() - 1) {
+//                failureFileName.append(failureFileNames.get(i)).append("、");
+//            } else {
+//                failureFileName.append(failureFileNames.get(i));
+//            }
+//        }
+        System.out.println(failureFileName.toString());
     }
 }
