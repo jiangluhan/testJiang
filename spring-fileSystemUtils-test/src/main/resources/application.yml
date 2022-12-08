@@ -1,0 +1,18 @@
+#端口号
+server:
+  port: 8080
+
+# 扫描classpath下所有mybatis配置文件
+mybatis:
+  mapper-locations: classpath*:mappers/*.xml
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: testFileSystemUtils-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: wj210523
+    driver-class-name: com.mysql.cj.jdbc.Driver
