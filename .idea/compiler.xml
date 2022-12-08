@@ -8,11 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="simple-Mybatis-1" />
-        <module name="swaggerToWord" />
+        <module name="spring-fileSystemUtils-test" />
         <module name="selectKey" />
         <module name="test" />
         <module name="eureka" />
         <module name="simple-Mybatis" />
+        <module name="spring-async-test" />
+        <module name="swaggerToWord" />
+        <module name="spring-register-bean" />
+        <module name="spring-bean-test" />
+        <module name="spring-batch-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
