@@ -6,7 +6,16 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/simple-Mybatis-1/pom.xml" />
+        <option value="$PROJECT_DIR$/Quartz-4/pom.xml" />
+        <option value="$PROJECT_DIR$/Quartz-5/pom.xml" />
+        <option value="$PROJECT_DIR$/Quartz-cluster/pom.xml" />
+        <option value="$PROJECT_DIR$/Quartz-cluster2/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/io/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

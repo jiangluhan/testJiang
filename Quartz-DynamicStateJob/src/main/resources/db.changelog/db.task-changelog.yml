@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: SC_TASK_INFO_1
+      author: jiangluhan
+      comment: "SC_TASK_INFO表初始化"
+      changes:
+        - tagDatabase:
+            tag: SC_TASK_INFO_1
+        - createTable:
+            tableName: SC_TASK_INFO
+            remarks: "任务信息表"
+            columns:
+              - column:
+                  constraints:
+                    primaryKey: true
+                  autoIncrement: true
+                  name: id
+                  type: int
+                  remarks: "编号 自增主键"
+              - column:
+                  name: cron
+                  type: varchar(32)
+                  remarks: "定时执行表达式"
+              - column:
+                  name: job_name
+                  type: varchar(256)
+                  remarks: "任务名称"
+              - column:
+                  constraints:
+                    nullable: false
+                  name: status
+                  type: int
+                  remarks: "任务开启状态 0-关闭 1-开启"
+              - column:
+                  name: create_time
+                  type: timestamp
+                  remarks: "创建时间"
+              - column:
+                  name: update_time
+                  type: timestamp
+                  remarks: "更新时间"

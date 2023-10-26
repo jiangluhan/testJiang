@@ -1,0 +1,26 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: springboot-quartz-db
+  quartz:
+    # 将 Quartz 持久化方式修改为 jdbc
+    job-store-type: jdbc
+    properties:
+      org:
+        quartz:
+          scheduler:
+            # 实例名称（默认为quartzScheduler）
+            instanceName: SC_Scheduler
+            # 实例节点 ID 自动生成
+            instanceId: AUTO
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            dataSource: quartz_jobs
+          dataSource:
+            quartz_jobs:
+              driver: com.mysql.cj.jdbc.Driver
+              URL: jdbc:mysql://127.0.0.1:3306/test-quartz?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+              user: root
+              password: wj210523

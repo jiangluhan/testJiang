@@ -26,7 +26,7 @@
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into user_auto (username) values (#{userName,jdbcType=VARCHAR})
+        insert into testonduplicatekeyupdate (userName) values (#{userName,jdbcType=VARCHAR})
     </insert>
 
     <!-- 测selectKey标签的作用，当主键为UUID时 -->

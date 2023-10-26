@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springboot-test-demo
+  #数据库逻辑
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: wj210523
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8888

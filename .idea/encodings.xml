@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/FileDetect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FileDetect/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FtpFileMonitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FtpFileMonitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-4/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-4/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-5/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-5/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-DB/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-DB/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-DynamicStateJob/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-DynamicStateJob/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-cluster/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-cluster/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-cluster2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-cluster2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-memory/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Quartz-memory/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ThreadPoolExecutor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ThreadPoolExecutor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebMvcConfigurer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/WebMvcConfigurer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/io/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/io/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/officeToPdf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/officeToPdf/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/selectKey/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/selectKey/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/simple-Mybatis-1/src/main/java" charset="UTF-8" />
@@ -17,9 +49,16 @@
     <file url="file://$PROJECT_DIR$/spring-fileSystemUtils-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-register-bean/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-register-bean/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-test-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-test-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/swaggerToWord/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/swaggerToWord/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testData/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/testData/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

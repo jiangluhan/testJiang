@@ -19,6 +19,19 @@
         <module>spring-batch-test</module>
         <module>spring-async-test</module>
         <module>spring-fileSystemUtils-test</module>
+        <module>ThreadPoolExecutor</module>
+        <module>officeToPdf</module>
+        <module>springboot-test-demo</module>
+        <module>testData</module>
+        <module>WebMvcConfigurer</module>
+        <module>Quartz-1</module>
+        <module>Quartz-2</module>
+        <module>Quartz-3</module>
+        <module>Quartz-memory</module>
+        <module>Quartz-DB</module>
+        <module>Quartz-DynamicStateJob</module>
+        <module>FileDetect</module>
+        <module>FtpFileMonitor</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>

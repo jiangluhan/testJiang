@@ -4,9 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.security.MessageDigest;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class StreamTest {
 
@@ -20,12 +17,12 @@ public class StreamTest {
 
 
         // 构建一个 Person 集合
-        List<Person> persons =
-                Arrays.asList(
-                        new Person("Max", 18),
-                        new Person("Peter", 23),
-                        new Person("Pamela", 23),
-                        new Person("David", 12));
+//        List<Person> persons =
+//                Arrays.asList(
+//                        new Person("Max", 18),
+//                        new Person("Peter", 23),
+//                        new Person("Pamela", 23),
+//                        new Person("David", 12));
 
 
     // 测试一下dev分支的代码到test
@@ -54,9 +51,18 @@ public class StreamTest {
 //
 //        System.out.println("MD5:" + md5 + "\n 耗时:" + ((endTime - beginTime) / 1000) + "s");
 
-        String path = "D:\\Users\\admin\\Desktop\\favicon.ico";
-        String md5 = getMD5(new File(path));
-        System.out.println(md5);
+//        String path = "D:\\Users\\admin\\Desktop\\favicon.ico";
+//        String md5 = getMD5(new File(path));
+//        System.out.println(md5);
+
+        GwResponse<Object> objectGwResponse = new GwResponse<>();
+        objectGwResponse.setStatus(0);
+        objectGwResponse.setMessage("成功");
+        Integer labelId = 0;
+        objectGwResponse.setData(labelId);
+
+        System.out.println(objectGwResponse.getData());
+
     }
 
     public static String getMD5(File file) {

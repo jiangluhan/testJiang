@@ -1,4 +1,7 @@
+import org.apache.commons.codec.digest.DigestUtils;
+
 import java.io.*;
+import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -27,11 +30,53 @@ public class FileTest {
 //        downloadList.add(url);
 //        downloadList.add("D:\\Users\\admin\\Desktop\\test1.txt");
 //        download(downloadList);
-        String filePath = "D:\\Users\\admin\\Desktop\\夹带测试(图片).zip";
-//        String filePath = "D:\\Users\\admin\\Desktop\\夹带测试(图片+文档+压缩包).zip";
-        File file = new File(filePath);
-        boolean b = checkFileSize(file.length(), 1, "G");
-        System.out.println(b);
+//        String filePath = "D:\\Users\\admin\\Desktop\\夹带测试(图片).zip";
+////        String filePath = "D:\\Users\\admin\\Desktop\\夹带测试(图片+文档+压缩包).zip";
+//        File file = new File(filePath);
+//        boolean b = checkFileSize(file.length(), 1, "G");
+//        System.out.println(b);
+
+
+        // 获取文件MD5值
+        String md5Hex = DigestUtils.md5Hex(new FileInputStream("D:\\GW-Work\\主线\\原素材\\视频\\AVI\\c004.avi"));
+        System.out.println("视频文件MD5值是：" + md5Hex);
+        // 获取视频大小
+        File file = new File("D:\\GW-Work\\主线\\原素材\\视频\\AVI\\c004.avi");
+        Long videoSize = ReadVideoSize(file);
+        System.out.println("视频文件大小是：" + videoSize);
+    }
+
+    /**
+     * 获取视频大小
+     * @param source
+     * @return
+     */
+    public static Long ReadVideoSize(File source) {
+        FileChannel fc= null;
+//        String size = "";
+        long size = 0l;
+        try {
+            @SuppressWarnings("resource")
+            FileInputStream fis = new FileInputStream(source);
+            fc= fis.getChannel();
+            BigDecimal fileSize = new BigDecimal(fc.size());
+//            System.out.println(fc.size());
+            size = fc.size();
+//            size = fileSize.divide(new BigDecimal(1048576), 2, RoundingMode.HALF_UP) + "MB";
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (null!=fc){
+                try{
+                    fc.close();
+                }catch(IOException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+        return size;
     }
 
 

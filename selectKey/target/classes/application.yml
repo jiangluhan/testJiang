@@ -12,30 +12,30 @@ spring:
   application:
     name: selectKey-service
   datasource:
-    url: jdbc:mysql://localhost:3306/test_jiang?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
-    password: 123456
-    driver-class-name: com.mysql.jdbc.Driver
+    password: wj210523
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 #eureka 配置
 eureka:
-  port: 8088
+  port: 8002
   user:
-    name: jiang
-    password: wj210523
+    name: hddata
+    password: hddata$2019
   peer:
-    node1: 127.0.0.1
+    node1: 192.168.1.124
     # 多节点,用于docker镜像部署，该值由docker-compose 文件中指定
     # node1: ${eureka.peer.node1}
 
   instance:
-    hostname: 127.0.0.1
-    instance-id: ${eureka.instance.hostname}:${spring.application.name}:${server.port}
+    #hostname: 192.168.6.135
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
     prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://${eureka.user.name}:${eureka.user.password}@${eureka.peer.node1}:${eureka.port}/eureka
     # Eureka 服务端不在注册中心注册自己
-    register-with-eureka: true
+    register-with-eureka: false
     # 是否从注册中心获取注册信息
     fetch-registry: true

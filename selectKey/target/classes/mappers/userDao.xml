@@ -6,12 +6,14 @@
     <resultMap id="BaseResultMapAuto" type="com.selectKey.po.testSelectKeyAutoPo">
         <id column="id" property="id"/>
         <result column="username" property="userName"/>
+        <result column="attr" property="attr"/>
     </resultMap>
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMapUuid" type="com.selectKey.po.testSelectKeyUuidPo">
         <id column="id" property="id"/>
         <result column="username" property="userName"/>
+        <result column="attr" property="attr"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -24,7 +26,7 @@
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into user_auto (username) values (#{userName,jdbcType=VARCHAR})
+        insert into testonduplicatekeyupdate (userName) values (#{userName,jdbcType=VARCHAR})
     </insert>
 
     <!-- 测selectKey标签的作用，当主键为UUID时 -->
@@ -50,4 +52,13 @@
             </if>
         </trim>
     </insert>
+
+    <select id="testList" resultType="com.selectKey.po.testSelectKeyAutoPo">
+        select d.id, d.userName, d.attr
+        from test t
+        inner join testonduplicatekeyupdate d on t.id = d.id and t.id in
+        <foreach collection="list" index="index" item="item" open="(" close=")" separator=",">
+            #{item}
+        </foreach>
+    </select>
 </mapper>

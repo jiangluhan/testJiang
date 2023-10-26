@@ -1,0 +1,28 @@
+server:
+  port: 7002
+
+spring:
+  application:
+    name: springboot-quartz-cluster
+  quartz:
+    # 将 Quartz 持久化方式修改为 jdbc
+    job-store-type: jdbc
+    properties:
+      org:
+        quartz:
+          scheduler:
+            # 实例名称（默认为quartzScheduler） 注意 Quartz 使用同一组数据库表作集群时，只需要配置相同的 instanceName 实例名称就可以，例如本次都用 SC_Scheduler。
+            instanceName: cluster_Scheduler
+            # 实例节点 ID 自动生成
+            instanceId: AUTO
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            dataSource: quartz_jobs
+            # 开启集群，多个 Quartz 实例使用同一组数据库表
+            isClustered: true
+          dataSource:
+            quartz_jobs:
+              driver: com.mysql.cj.jdbc.Driver
+              URL: jdbc:mysql://127.0.0.1:3306/test-quartz?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+              user: root
+              password: wj210523
