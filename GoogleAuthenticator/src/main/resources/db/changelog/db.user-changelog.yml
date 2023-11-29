@@ -1,0 +1,45 @@
+#创建用户
+databaseChangeLog:
+  - changeSet:
+      id: user
+      author: LHJ
+      comment: "create_table_user"
+      preConditions:
+        - onFail: MARK_RAN
+        - not:
+            tableExists:
+              tableName: user
+      changes:
+        - tagDatabase:
+            tag: create_table_user
+        - createTable:
+            tableName: user
+            remarks: "user information"
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                  name: id
+                  type: int
+                  remarks: "自增主键ID"
+              - column:
+                  name: user_name
+                  type: varchar(256)
+                  remarks: "用户名"
+              - column:
+                  name: password
+                  type: varchar(1024)
+                  remarks: "密码"
+              - column:
+                  name: secret_key
+                  type: varchar(20)
+                  remarks: "google 随机生成密钥"
+              - column:
+                  name: create_time
+                  type: timestamp
+                  remarks: "create time"
+              - column:
+                  name: update_time
+                  type: timestamp
+                  remarks: "update time"

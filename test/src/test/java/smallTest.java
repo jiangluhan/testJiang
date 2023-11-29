@@ -1,5 +1,3 @@
-import cn.hutool.crypto.SmUtil;
-import cn.hutool.crypto.symmetric.SM4;
 import com.github.rholder.retry.Retryer;
 import com.github.rholder.retry.RetryerBuilder;
 import com.github.rholder.retry.StopStrategies;
@@ -228,11 +226,12 @@ public class smallTest {
 //        String result = SM4Utils.decryptData_ECB("fvaLAyhd60aTCv3rWVq1gLXePPQG4QtllooKsNt/0X3BsMu0nFEhXQ8pQet/m7zjuCQUHyiS/6VKAR2IZ2EMW75Gt+r8oiYCWnGh/QsGuAOPvYNg/FKQUtj3eqds73M4VroFwmXCmcmD7v7Ut9pvNm8lPjORDSm2sL1jpwveOB8=");
 //        System.out.println("最终解密后的结果是：" + result);
 
-        SM4 sm4 = SmUtil.sm4(txt.getBytes());
+//        SM4 sm4 = SmUtil.sm4(txt.getBytes());
 
 
-
-
+        String path = "D:\\gw_resource_pool_data.txt";
+        File file = new File(path);
+        System.out.println(file.getPath());
     }
 
 

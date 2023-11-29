@@ -3,8 +3,14 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/FileDetect/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FileDetect/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FilePathMerge/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FilePathMerge/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FileSelect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FileSelect/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FtpFileMonitor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FtpFileMonitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoogleAuthenticator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoogleAuthenticator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Quartz-1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Quartz-1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Quartz-2/src/main/java" charset="UTF-8" />
@@ -27,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/Quartz-memory/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ThreadPoolExecutor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ThreadPoolExecutor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ToolList/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ToolList/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebMvcConfigurer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebMvcConfigurer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka/src/main/java" charset="UTF-8" />

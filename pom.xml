@@ -27,11 +27,19 @@
         <module>Quartz-1</module>
         <module>Quartz-2</module>
         <module>Quartz-3</module>
+        <module>Quartz-4</module>
+        <module>Quartz-5</module>
+        <module>Quartz-cluster</module>
+        <module>Quartz-cluster2</module>
         <module>Quartz-memory</module>
         <module>Quartz-DB</module>
         <module>Quartz-DynamicStateJob</module>
         <module>FileDetect</module>
         <module>FtpFileMonitor</module>
+        <module>ToolList</module>
+        <module>FileSelect</module>
+        <module>FilePathMerge</module>
+        <module>GoogleAuthenticator</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>

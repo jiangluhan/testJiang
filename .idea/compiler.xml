@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-fileSystemUtils-test" />
+        <module name="ToolList" />
         <module name="testData" />
         <module name="Quartz-cluster" />
         <module name="WebMvcConfigurer" />
         <module name="eureka" />
+        <module name="FilePathMerge" />
         <module name="spring-batch-test" />
         <module name="springboot-test-demo" />
         <module name="Quartz-cluster2" />
@@ -26,8 +28,10 @@
         <module name="FtpFileMonitor" />
         <module name="simple-Mybatis-1" />
         <module name="Quartz-DB" />
+        <module name="GoogleAuthenticator" />
         <module name="test" />
         <module name="Quartz-1" />
+        <module name="FileSelect" />
         <module name="swaggerToWord" />
         <module name="spring-register-bean" />
         <module name="Quartz-DynamicStateJob" />
