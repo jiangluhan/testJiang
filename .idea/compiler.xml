@@ -14,6 +14,7 @@
         <module name="WebMvcConfigurer" />
         <module name="eureka" />
         <module name="FilePathMerge" />
+        <module name="demo" />
         <module name="spring-batch-test" />
         <module name="springboot-test-demo" />
         <module name="Quartz-cluster2" />
@@ -43,6 +44,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="io" target="1.8" />
+      <module name="minio-spring-boot-starter" target="1.5" />
       <module name="Quartz-3 (1)" target="1.8" />
       <module name="Quartz-3 (2)" target="1.8" />
       <module name="Quartz-3 (3)" target="1.8" />

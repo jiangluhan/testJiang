@@ -10,11 +10,13 @@
         <option value="$PROJECT_DIR$/Quartz-5/pom.xml" />
         <option value="$PROJECT_DIR$/Quartz-cluster/pom.xml" />
         <option value="$PROJECT_DIR$/Quartz-cluster2/pom.xml" />
+        <option value="$PROJECT_DIR$/minio/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/io/pom.xml" />
+        <option value="$PROJECT_DIR$/minio/pom.xml" />
       </set>
     </option>
   </component>

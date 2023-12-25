@@ -40,6 +40,7 @@
         <module>FileSelect</module>
         <module>FilePathMerge</module>
         <module>GoogleAuthenticator</module>
+        <module>demo</module>
     </modules>
     <!-- 指定依赖包版本号-->
     <properties>

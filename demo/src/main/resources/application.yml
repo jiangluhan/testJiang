@@ -1,0 +1,72 @@
+#端口号
+server:
+  port: 7788
+
+# 扫描classpath下所有mybatis配置文件
+#mybatis:
+#  mapper-locations: classpath*:mappers/*.xml
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: http-client-service
+  # 文件大小设置
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5GB
+      max-request-size: 5GB
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: wj210523
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+## minio 配置
+#minio:
+#  ## minio 服务地址
+#  url: http://192.168.1.124:9000
+#  ## 账户
+#  accessKey: hddata-t1plus
+#  ## 密码
+#  secretKey: hddata#t1plus
+#  ## 桶
+#  bucket: hddata
+#  ## 公共桶
+#  publicBucket: public-resource
+#  ## 当桶不存在，是否创建
+#  createBucket: true
+#  ## 启动检测桶，是否存在
+#  checkBucket: true
+#  ## 连接超时
+#  connectTimeout: 6000
+#  ## 写入超时
+#  writeTimeout: 30000
+#  ## 读取超时
+#  readTimeout: 30000
+#  # 默认的过期时间
+#  default-expire-time: 30
+
+#eureka 配置
+#eureka:
+#  port: 8002
+#  user:
+#    name: hddata
+#    password: hddata$2019
+#  peer:
+#    node1: 192.168.1.124
+    # 多节点,用于docker镜像部署，该值由docker-compose 文件中指定
+    # node1: ${eureka.peer.node1}
+
+#  instance:
+#    #hostname: 192.168.6.135
+#    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+#    prefer-ip-address: true
+#  client:
+#    serviceUrl:
+#      defaultZone: http://${eureka.user.name}:${eureka.user.password}@${eureka.peer.node1}:${eureka.port}/eureka
+#    # Eureka 服务端不在注册中心注册自己
+#    register-with-eureka: false
+#    # 是否从注册中心获取注册信息
+#    fetch-registry: true
