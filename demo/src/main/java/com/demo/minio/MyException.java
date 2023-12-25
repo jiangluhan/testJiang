@@ -1,10 +1,5 @@
 package com.demo.minio;
 
-/**
- * @author wang
- * @des 高维自定义异常
- * @date 2021/7/23 16:46
- */
 public class MyException extends RuntimeException {
     //异常码
     private Integer code;
