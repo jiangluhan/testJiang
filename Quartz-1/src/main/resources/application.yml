@@ -39,3 +39,14 @@ spring:
 #    register-with-eureka: true
 #    # 是否从注册中心获取注册信息
 #    fetch-registry: true
+  redis:
+    database: 3
+    host: 192.168.1.53
+    port: 6379
+    password: '6W2RXxKbq5uT1SvI+YcmvgeJgv9+irtaZB53Z2EQfyAoIWLSczoJLg=='
+    timeout: 5000
+    lettuce:
+      pool:
+        maxIdle: 1
+        minIdle: 0
+        maxActive: 10
